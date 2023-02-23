@@ -1,9 +1,9 @@
 .header {
     display: flex;
     background-color: #fff;
-    border-bottom: 10px solid #495e57;
     width: 100%;
     z-index: 3;
+
 }
 
 .header-wrapper {
@@ -14,6 +14,7 @@
     margin: 0 auto;
     background-color: #fff;
     padding: 15px 0;
+
 }
 
 
@@ -46,7 +47,7 @@
         z-index: 3;
     }
 
-    .header-wrapper .mobile-nav ul {
+    .header-wrapper ul {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -57,10 +58,9 @@
         padding: 60px 30px 30px;
         background: rgba(255,255,255,1);
         z-index: 1;
-        border-bottom: 10px solid #495e57;
     }
     
-    .header-wrapper .mobile-nav ul li {
+    .header-wrapper ul li {
         padding: 7px 0;
     }
 }
