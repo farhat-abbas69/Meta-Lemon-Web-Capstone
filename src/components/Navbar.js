@@ -1,7 +1,6 @@
 import React from 'react';
 import "./styles/Navbar.css";
 import Logo from "../components/assets/logo.jpg"
-import Navigation from './Navigation';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
@@ -12,7 +11,16 @@ const Navbar = () => {
         <div className="image-wrapper">
           <NavLink to="/">{<img className="logo-img" src = { Logo } alt = "Little Lemon logo" />}</NavLink>
         </div>
-        <Navigation />
+        <nav className="navigation">
+          <ul>
+            <li><NavLink to="/" className="active-links">Home</NavLink></li>
+            <li><NavLink to="#">About</NavLink></li>
+            <li><NavLink to="#">Menu</NavLink></li>
+            <li><NavLink to="/reservations" className="active-links">Reservations</NavLink></li>
+            <li><NavLink to="#">Order Online</NavLink></li>
+            <li><NavLink to="#">Login</NavLink></li>
+          </ul>
+        </nav>
       </div>
     </div>
   )
